@@ -18,14 +18,14 @@ public class CustomerController {
     public CustomerService customerService;
 
     // Create a new customer
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Customer> createCustomer(@RequestBody Customer customer) {
         Customer savedCustomer = customerService.createCustomer(customer);
         return new ResponseEntity<>(savedCustomer, HttpStatus.CREATED);
     }
 
     // Get all customers
-    @GetMapping
+    @GetMapping("/showAll")
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
