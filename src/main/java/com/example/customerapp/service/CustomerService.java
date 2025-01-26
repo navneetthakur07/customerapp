@@ -1,6 +1,7 @@
 package com.example.customerapp.service;
 
 import com.example.customerapp.entity.Customer;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
