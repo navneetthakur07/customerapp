@@ -13,6 +13,9 @@ public class Customer {
     private String lastName;
     private String email;
 
+    public Customer() {
+    }
+
     public Customer (Long id, String firstName, String lastName, String email) {
         this.id = id;
         this.firstName = firstName;
@@ -48,7 +51,7 @@ public class Customer {
         return email;
     }
 
-    public void setEmail(){
-        this.email = email;
+    public void setEmail(String email){
+        this.email = this.email;
     }
 }
